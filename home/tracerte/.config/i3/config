@@ -1,7 +1,7 @@
 # i3 config file (v4)
 
 # I prefer to use the Win key as the mod key.
-set $mod Mod1
+set $mod Mod4
 
 # Default font for i3.
 font pango:DejaVu Sans Mono 8

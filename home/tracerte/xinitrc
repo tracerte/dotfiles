@@ -1,2 +1,2 @@
 exec i3
-setxkbmap -layout us
+setxkbmap us
