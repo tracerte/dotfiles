@@ -9,6 +9,7 @@
 # - ~/.login_conf
 # - ~/.config/i3/config
 # - ~/.config/i3/conky-i3bar.sh
+# - ~/.wallpaper
 
 
 # Symlinks files in the configuration directories under /usr/ namely:
@@ -47,6 +48,7 @@ then
 	ln -s "${PWD}/home/user/conkyrc" ~/.conkyrc
 	ln -s "${PWD}/home/user/Xdefaults" ~/.Xdefaults
 	ln -s "${PWD}/home/user/login_conf" ~/.login_conf
+	ln -s "${PWD}/home/user/wallpaper" ~/.wallpaper
 	echo "Creating the ~/.config/i3 directories"
 	mkdir -p ~/.config/i3
 	ln -s "${PWD}/home/user/config/i3/config" ~/.config/i3/config
