@@ -12,7 +12,7 @@ Simple configuration:
 
 ```sh
 $ git config --global user.name "Matthew B. Reisch"
-$ git config --global user.email dev@tracerte.com
+$ git config --global user.email "matt@example.com" 
 ```
 
 ## Installation
@@ -20,7 +20,7 @@ $ git config --global user.email dev@tracerte.com
 Run `setup.sh` with the following parameters:
 
 - `config`: Installs (symlinks) config files
-- `admin`: Install admin related packages and makes additional inline configurations.
+- `admin`: Installs admin related packages and makes additional inline configurations.
 - `desktop`: Installs desktop related packages and makes additional inline configurations.
 - `bash`: Installs bash related packages and changes the calling user's default shell to bash
 - `intel`: Installs Intel graphics card drivers and xorg and then makes inline configurations
