@@ -42,7 +42,7 @@ then
 	su - root -c "cat ${PWD}/desktop-packages.txt | xargs pkg install -y"
 	ee $? "Unable to install admin packages"
 	echo "Enabling sound"
-	su - root -c "echo snd_hda_load=\"YES\" >> /boot/loader.conf"
+	su - root -c 'echo snd_hda_load=\"YES\" >> /boot/loader.conf'
 	ee $? "Unable to enable sound"
 elif [ "${ACTIONTYPE}" = "bash" ]
 then
@@ -68,12 +68,12 @@ then
 	su - root -c "pw groupmod video -m ${CALLUSER}"
 	ee $? "Unable to add ${CALLUSER} to video group"
 	echo "Enabling Kernel Mode Setting (KMS) for vt device"
-	su - root -c "echo kern.vty=\"vt\" >> /boot/loader.conf"
+	su - root -c 'echo kern.vty=\"vt\" >> /boot/loader.conf'
 	ee $? "Unable to enable vt device in boot loader"
 elif [ "${ACTIONTYPE}" = "boot" ]
 then
 	echo "Change boot delay from 10 to 5 seconds"
-	su - root -c "echo autoboot_delay=\"5\" >> /boot/loader.conf"
+	su - root -c 'echo autoboot_delay=\"5\" >> /boot/loader.conf'
 	ee $? "Unable to change autoboot delay"
 else
 	echo "Error, unrecognizable action_type: ${ACTIONTYPE}"
