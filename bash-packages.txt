@@ -1,2 +1,6 @@
-bash bash-completion \
-fzf neovim nnn mc \
+bash
+bash-completion
+fzf
+neovim
+nnn
+mc
