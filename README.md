@@ -17,6 +17,13 @@ $ git config --global user.email "matt@example.com"
 
 ## Installation
 
+First flip the executable bit on for the two scripts
+
+```sh
+$ chmod +x setup.sh
+$ chmod +x symlinker.sh
+```
+
 Run `setup.sh` from the repo's root with the following parameters:
 
 - `config`: Installs (symlinks) config files
