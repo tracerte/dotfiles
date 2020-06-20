@@ -1,0 +1,3 @@
+i3-gaps i3lock i3status conky dmenu xterm gnome-screenshot nitrogen \
+claws-mail claws-mail-pgp \
+firefox mpv pinentry-gtk2 hexchat evince filezilla google-fonts libreoffice \
