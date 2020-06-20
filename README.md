@@ -17,7 +17,7 @@ $ git config --global user.email "matt@example.com"
 
 ## Installation
 
-Run `setup.sh` with the following parameters:
+Run `setup.sh` from the repo's root with the following parameters:
 
 - `config`: Installs (symlinks) config files
 - `admin`: Installs admin related packages and makes additional inline configurations.

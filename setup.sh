@@ -25,8 +25,8 @@ ACTIONTYPE=$(echo "$1" | tr '[:upper:]' '[:lower:]')
 if [ "${ACTIONTYPE}" = "config" ]
 then
 	echo "Symlinking"
-	su - root -c "${PWD}/symlinker.sh usr"
-	"${PWD}"/symlinker.sh home
+	su - root -c "${PWD}/symlinker.sh usr ${PWD}"
+	"${PWD}"/symlinker.sh home "${PWD}"
 elif [ "${ACTIONTYPE}" = "admin" ]
 then
 	echo "Installing admin packages"
